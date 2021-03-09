@@ -1,7 +1,20 @@
 function mostrar()
 {
-	alert("ok");
+	var i;
+	var numero;
+	var contador;
 
+	contador=0;
 
+	numero=prompt("Ingrese un numero");
 
-}//FIN DE LA FUNCIÓN
+	for(i=1; i<numero; i++)
+	{
+		if(i%2==0)
+		{
+			document.write(i+"<br>");
+			contador++;
+		}
+	}
+	document.write("Cantidad de pares: "+contador);
+}
